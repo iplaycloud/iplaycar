@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iplay.car">
+    <!--android:sharedUserId="android.uid.system"-->
+
+    <!-- 百度鹰眼所需权限 star -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+    <!--<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+    <!--<uses-permission android:name="android.permission.INTERNET" />-->
+    <!--<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />-->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--<uses-permission android:name="android.permission.WRITE_SETTINGS" />-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 百度鹰眼所需权限 end -->
+
+    <!-- 百度语音权限 star  -->
+    <!--<uses-permission android:name="android.permission.INTERNET" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
+    <!--<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />-->
+    <!-- 百度语音权限 end  -->
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- 允许访问摄像头进行拍照 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 录制视频/音频权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!--显示悬浮窗口的权限-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- 恢复出厂设置权限-->
+    <uses-permission android:name="android.permission.MASTER_CLEAR" />
+    <!--接收广播是弹出对话框权限-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!--关机权限-->
+    <uses-permission android:name="android.permission.SHUTDOWN" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <application
+        android:name="com.iplay.car.navigation.app.AppData"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppBaseTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="g2HBRoBj4fhZGvh7bd3WE0cuvrTSWx6G" />
+        <!-- begin: baidu speech sdk-->
+        <!--
+            离线功能指南：
+            1. 在百度语音开放平台注册应用，http://yuyin.baidu.com/app
+            2. 为您的应用的“申请离线授权页面”，填写程序包名
+            3. 在当前应用的AndroidManifest.xml中填写相应的APP_ID（或在代码中设置appid参数）
+            4. 根据场景下载并集成相应的资源，见http://yuyin.baidu.com/docs/asr/131和http://yuyin.baidu.com/asr/download
+
+            另外需要注意的是离线功能只是在线功能的“增强”，不能永久不联网使用（特别是首次使用）。
+        -->
+        <!-- 请填写真实的APP_ID API_KEY SECRET_KEY -->
+        <meta-data android:name="com.baidu.speech.APP_ID" android:value="8976532"/>
+        <meta-data android:name="com.baidu.speech.API_KEY" android:value="FtylQVMTN6ieZBApAEn7Yatd"/>
+        <meta-data android:name="com.baidu.speech.SECRET_KEY" android:value="0c4602e054a3a3a6a0b9525dcf3240f4"/>
+        <service android:name="com.baidu.speech.VoiceRecognitionService" android:exported="false" />
+        <activity
+            android:name="com.baidu.voicerecognition.android.ui.BaiduASRDigitalDialog"
+            android:configChanges="orientation|keyboardHidden|screenLayout"
+            android:theme="@android:style/Theme.Dialog"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.baidu.action.RECOGNIZE_SPEECH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- end : baidu speech sdk-->
+
+        <activity
+            android:name="com.iplay.car.common.ui.MainActivity"
+            android:screenOrientation="landscape">
+<!--            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity
+            android:name="com.iplay.car.common.ui.DogActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.iplay.car.common.ui.DrivingRecodeActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.iplay.car.common.ui.GpsActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.iplay.car.backcar.view.BackcarActivity"
+            android:screenOrientation="landscape" />
+
+        <receiver android:name="com.iplay.car.common.receive.MyAdmin">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/my_admin" />
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.iplay.car.voice.service.MainService"></service>
+        <service android:name="com.iplay.car.voice.service.MainService1"></service>
+        <service
+            android:name="com.baidu.trace.LBSTraceService"
+            android:enabled="true"
+            android:exported="true" />
+        <!-- 恢复出厂设置广播-->
+        <receiver
+            android:name="com.android.server.MasterClearReceiver"
+            android:permission="android.permission.MASTER_CLEAR"
+            android:priority="100">
+            <intent-filter>
+                <!-- For Checkin, Settings, etc.: action=MASTER_CLEAR -->
+                <action android:name="android.intent.action.MASTER_CLEAR" />
+                <!-- MCS always uses REMOTE_INTENT: category=MASTER_CLEAR -->
+                <category android:name="android.intent.category.MASTER_CLEAR_NOTIFICATION" />
+            </intent-filter>
+        </receiver>
+
+        <!--主界面-->
+        <activity android:name="com.iplay.car.main.HomeActivity"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.iplay.car.main.HomeActivity1"
+            android:screenOrientation="landscape">
+        </activity>
+        <!--拨号、蓝牙界面-->
+        <activity android:name="com.iplay.car.ble.view.PhoneActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <!--图片 1 —文件夹界面-->
+        <activity android:name="com.iplay.car.picture.PictureOneActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <!--图片 2 —小图片界面-->
+        <activity android:name="com.iplay.car.picture.PictureTwoActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <!--图片 3 —小图片界面-->
+        <activity android:name="com.iplay.car.picture.PictureThreeActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <!--视频 1 一前、后视频界面-->
+        <activity android:name="com.iplay.car.video.VideoOneActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <!--视频 2 一所有视频、锁定视频界面-->
+        <activity android:name="com.iplay.car.video.VideoTwoActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <!--视频 3 一日期文件夹界面-->
+        <activity android:name="com.iplay.car.video.VideoThreeActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <!--视频 4 一视频列表界面-->
+        <activity android:name="com.iplay.car.video.VideoFourActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <!--视频 5 一视频播放界面-->
+        <activity android:name="com.iplay.car.video.VideoFiveActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <!--设置界面-->
+        <activity android:name="com.iplay.car.setting.view.SetActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <!--WiFi界面-->
+        <activity android:name="com.iplay.car.setting.view.WifiActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <!--系统设置界面-->
+        <activity android:name="com.iplay.car.setting.view.SystemActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <!--版本升级界面-->
+        <activity android:name="com.iplay.car.setting.view.UpdateActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <!--碰撞设置界面-->
+        <activity android:name="com.iplay.car.setting.view.ImpactActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <!--流量界面-->
+        <activity android:name="com.iplay.car.setting.view.FlowActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <!--WiFi热点界面-->
+        <activity android:name="com.iplay.car.setting.view.WiFiHotActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <!--SD卡信息界面-->
+        <activity android:name="com.iplay.car.setting.view.SDCardsActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <!--二维码界面-->
+        <activity android:name="com.iplay.car.setting.view.QRCodeActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <!--微信界面-->
+        <activity android:name="com.iplay.car.setting.view.WeixinActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+    </application>
+</manifest>

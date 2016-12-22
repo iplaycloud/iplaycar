@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/main_back">
+
+    <!--主界面————横向菜单布局-->
+
+    <RelativeLayout
+        android:id="@+id/home_time_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/home_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:textColor="@color/white"
+            android:text="2222"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/home_week_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="2222"
+            android:layout_below="@id/home_time_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <ImageView
+            android:id="@+id/home_line_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home_week_tv"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/home_time_vertical"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/home_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_below="@id/home_line_iv"
+            android:text="2222"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/home_time_rl"
+        android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/home_menu_navigation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/home_menu_navigation" />
+
+                <ImageView
+                    android:id="@+id/home_menu_edog"
+                    android:layout_toRightOf="@id/home_menu_navigation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/home_menu_edog" />
+
+                <ImageView
+                    android:id="@+id/home_menu_bluetooth"
+                    android:layout_toRightOf="@id/home_menu_edog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/home_menu_bluetooth" />
+
+                <ImageView
+                    android:id="@+id/home_menu_picture"
+                    android:layout_toRightOf="@id/home_menu_bluetooth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/home_menu_picture" />
+
+                <ImageView
+                    android:id="@+id/home_menu_video"
+                    android:layout_toRightOf="@id/home_menu_picture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/home_menu_video" />
+
+                <ImageView
+                    android:id="@+id/home_menu_music"
+                    android:layout_toRightOf="@id/home_menu_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/home_menu_music" />
+
+                <ImageView
+                    android:id="@+id/home_menu_record"
+                    android:layout_toRightOf="@id/home_menu_music"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/home_menu_record" />
+
+                <ImageView
+                    android:id="@+id/home_menu_backcar"
+                    android:layout_toRightOf="@id/home_menu_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/home_menu_record" />
+
+                <ImageView
+                    android:id="@+id/home_menu_set"
+                    android:layout_toRightOf="@id/home_menu_backcar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/home_menu_set" />
+
+                <ImageView
+                    android:id="@+id/home_menu_wechat"
+                    android:layout_toRightOf="@id/home_menu_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/home_menu_wechat" />
+
+            </RelativeLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

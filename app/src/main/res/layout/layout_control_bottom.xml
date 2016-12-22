@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/control_background">
+
+    <!-- 控制栏—底部布局 -->
+
+    <ImageView
+        android:id="@+id/control_bottom_return"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/selector_control_return"
+        android:padding="8dp"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/control_bottom_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/control_bottom_return"
+        android:text="界面名字"
+        android:textSize="20sp"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/control_bottom_compile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/control_bottom_compile"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/control_bottom_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/control_bottom_delete"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/control_bottom_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/control_bottom_delete"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/selector_control_all"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

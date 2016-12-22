@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/main_back">
+    <!-- 拨号界面的布局 -->
+
+    <RadioGroup
+        android:id="@+id/phone_control_rg"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true">
+
+        <RadioButton
+            android:id="@+id/phone_set"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/selector_phone_set"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/phone_call_rb"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/selector_phone_call"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/phone_book_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/selector_phone_book"
+            android:button="@null"
+            android:checked="false"
+            android:layout_gravity="center" />
+
+        <RadioButton
+            android:id="@+id/phone_records_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/selector_phone_records"
+            android:button="@null"
+            android:checked="false"
+            android:layout_gravity="center" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/phone_vertical_line"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/main_vertical"
+        android:layout_toLeftOf="@id/phone_control_rg"/>
+
+    <FrameLayout
+        android:id="@+id/phone_content_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/phone_vertical_line" />
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 视频播放界面进度条的底色2 -->
+    <item android:id="@android:id/background">
+        <nine-patch android:src="@drawable/video_progress_bg" />
+    </item>
+
+    <item android:id="@android:id/progress">
+        <clip>
+            <nine-patch android:src="@drawable/video_progress" />
+        </clip>
+    </item>
+
+</layer-list>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_back"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <!-- 视频文件——前后文件夹界面和全部视频、已锁定视频界面的布局 -->
+
+    <RelativeLayout
+        android:id="@+id/video_one_rl"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/video_one_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/video_folder"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/video_one_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/video_one_iv"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/set_right_arrows"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/set_long_line"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_two_rl"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/video_one_rl">
+
+        <ImageView
+            android:id="@+id/video_two_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/video_folder"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/video_two_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/video_two_iv"
+            android:layout_marginLeft="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/set_right_arrows"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/set_long_line"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_control_bottom" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/main_back">
+    <!-- 版本更新页面的布局 -->
+
+    <include layout="@layout/layout_control_bottom" />
+
+    <TextView
+        android:id="@+id/update_hint_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:text="@string/update_hint_no"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/update_detail_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/update_hint_tv"
+        android:layout_marginBottom="20dp"
+        android:text="3333"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/update_update_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update_hint_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:text="@string/update_btn_start"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

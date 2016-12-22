@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <!--蓝牙拨号界面之电话薄界面-->
+    <LinearLayout
+        android:id="@+id/book_control_ll"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/book_ag_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="A-G"
+            android:textSize="26sp"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_phone_book_front"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/book_hn_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="H-N"
+            android:textSize="26sp"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_phone_book_front"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/book_ot_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="O-T"
+            android:textSize="26sp"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_phone_book_front"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/book_uz_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="U-Z"
+            android:textSize="26sp"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_phone_book_front"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/book_symbol_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="#"
+            android:textSize="26sp"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_phone_book_front"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:src="@drawable/main_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/book_control_ll" />
+
+    <FrameLayout
+        android:id="@+id/fl_contastfragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/book_control_ll"
+        android:layout_marginLeft="20dp" />
+
+
+</RelativeLayout>

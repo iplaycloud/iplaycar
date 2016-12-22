@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--视频播放页面的播放按钮的选择器2-->
+    <item android:drawable="@mipmap/video_play_s" android:state_selected="true" />
+    <item android:drawable="@mipmap/video_play_s" android:state_pressed="true" />
+    <item android:drawable="@mipmap/video_play_s" android:state_checked="true" />
+    <item android:drawable="@mipmap/video_play_n" />
+
+</selector>

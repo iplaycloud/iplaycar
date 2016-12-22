@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <SurfaceView
+        android:id="@+id/video_five_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/video_five_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+            <TextView
+                android:id="@+id/video_five_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8dp"
+                android:text="00:00:00" />
+
+            <TextView
+                android:id="@+id/video_five_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                android:layout_marginRight="8dp"
+                android:text="00:00:00" />
+
+            <SeekBar
+                android:id="@+id/video_five_sb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/video_five_min"
+                android:layout_toLeftOf="@id/video_five_max"
+                android:minHeight="5dp"
+                android:maxHeight="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:max="100"
+                android:thumbOffset="5dp"
+                android:progressDrawable="@drawable/video_seekbar"
+                android:thumb="@drawable/video_play_location_but" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/video_five_control"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/bottomBackGround">
+
+            <ImageView
+                android:id="@+id/video_five_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_control_return"
+                android:padding="8dp"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/video_five_back"
+                android:layout_marginLeft="10dp"
+                android:text="@string/video"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/video_five_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_video_five_play"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:id="@+id/video_five_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_video_five_previous"
+                android:layout_toLeftOf="@id/video_five_play"
+                android:layout_marginRight="20dp"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:id="@+id/video_five_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_video_five_next"
+                android:layout_toRightOf="@id/video_five_play"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/video_five_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_video_five_hint"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true" />
+
+            <ImageView
+                android:id="@+id/video_five_lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_video_four_lock"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/video_five_hint" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_five_hint_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/video_five_ll"
+        android:background="@drawable/video_play_info_bg"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/video_five_hint_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/video_hint_name"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/video_five_hint_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/video_five_hint_tv1"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/video_five_hint_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/video_hint_time"
+            android:layout_below="@id/video_five_hint_tv1"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/video_five_hint_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/video_five_hint_tv1"
+            android:layout_toRightOf="@id/video_five_hint_tv2"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/video_five_hint_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/video_five_hint_tv2"
+            android:text="@string/video_hint_size"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/video_five_hint_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/video_five_hint_tv2"
+            android:layout_toRightOf="@id/video_five_hint_tv3"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/video_five_hint_tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/video_five_hint_tv3"
+            android:text="@string/video_hint_type"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/video_five_hint_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/video_five_hint_tv3"
+            android:layout_toRightOf="@id/video_five_hint_tv4"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

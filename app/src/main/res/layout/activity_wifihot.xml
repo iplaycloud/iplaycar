@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/main_back">
+
+    <RelativeLayout
+        android:id="@+id/hot_name_rl"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/hot_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/mobile_ap"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/hot_state_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/hot_name_tv"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ToggleButton
+            android:id="@+id/hot_open_tb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:background="@color/transparent"
+            android:button="@drawable/toggle_btn"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/set_long_line" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/hot_set_rl"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/hot_name_rl">
+
+        <TextView
+            android:id="@+id/hot_set_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_centerVertical="true"
+            android:text="@string/set_wifi_hot"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/set_right_arrows"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/set_long_line" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_control_bottom" />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--全选、全不选按钮的选择器2-->
+    <item android:drawable="@mipmap/control_bottom_select_s" android:state_selected="true"/>
+    <item android:drawable="@mipmap/control_bottom_select_s" android:state_pressed="true"/>
+    <item android:drawable="@mipmap/control_bottom_select_s" android:state_checked="true"/>
+    <item android:drawable="@mipmap/control_bottom_select_n" />
+
+</selector>

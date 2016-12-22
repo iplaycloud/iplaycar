@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="photoBackGround">#ff2f89ff</color>
+    <color name="bottomBackGround">#995C6D7D</color>
+    <color name="videoSeekbar">#330000ff</color>
+    <color name="back">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="popup_title_color">#ffc9cdd1</color>
+    <color name="advance_setting_item_bg">#fff8f8f8</color>
+    <color name="light_blue">#33b5e5</color>
+    <color name="transparent">#00000000</color>
+    <color name="textdec">#f18c14</color>
+    <color name="blue">#3366cc</color>
+    <color name="lv_wifiListFragment">#6699FF</color>
+
+    <color name="red">#FF0000</color>
+
+    <!--控制器的背景颜色-->
+    <color name="control_background">#243C56</color>
+
+    <!--电话薄页面选择的颜色-->
+    <color name="book_front_n">#243D56</color>
+    <color name="book_front_s">#5996C6</color>
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:background="@color/control_background">
+
+    <!-- 控制栏—底部布局 -->
+
+    <ImageView
+        android:id="@+id/control_right_return"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/selector_control_return"
+        android:padding="8dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/control_right_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/control_right_return"
+        android:text="界面名字"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/control_right_compile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:src="@mipmap/control_bottom_compile"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/control_right_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:src="@mipmap/control_bottom_delete"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/control_right_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/control_right_delete"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/selector_control_all"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

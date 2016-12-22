@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">rearviewMirror</string>
+    <drawable name="clr_normal">#3366cc</drawable>
+    <drawable name="clr_pressed">#6699ff</drawable>
+    <string name="upload">正在读取...</string>
+    <string name="noData">没有数据</string>
+    <string name="noSDK">请插入SD卡！</string>
+
+    <string name="checkAll">全选</string>
+    <string name="unCheckAll">全部不选</string>
+    <string name="compile">编辑</string>
+
+    <string name="photo">相册</string>
+
+    <string name="video">视频</string>
+    <string name="video_before">前录视频</string>
+    <string name="video_after">后录视频</string>
+    <string name="video_all">全部视频</string>
+    <string name="video_lok">已锁定的视频</string>
+
+    <string name="video_hint_name">视频名称：</string>
+    <string name="video_hint_time">时长：</string>
+    <string name="video_hint_size">大小：</string>
+    <string name="video_hint_type">格式：</string>
+
+    <string name="drive_video">行车记录</string>
+
+
+    <string name="contast">联系人</string>
+    <string name="onSelf_hot">个人热点</string>
+    <string name="SD_info">SD卡信息</string>
+    <string name="er_Code">二维码</string>
+    <string name="vesion">版本号</string>
+    <string name="factor_reset">恢复出产设置</string>
+    <string name="refresh">下拉刷新</string>
+    <string name="last_refresh">上次更新</string>
+    <string name="Parking_monitoring">停车监控</string>
+    <string name="wifi">WIFI</string>
+    <string name="FM_broadcast">调频广播</string>
+    <string name="system_settings">系统设置</string>
+    <string name="soft_update">软件更新</string>
+    <string name="brightness_control">亮度调节</string>
+    <string name="voice_control">音量调节</string>
+    <string name="off_screen">30秒熄屏</string>
+    <string name="Collision_setting">碰撞设置</string>
+    <string name="flower_seeting">流量管理</string>
+    <string name="signal_intensity">信号强度</string>
+    <string name="security">安全性</string>
+    <string name="password">密码</string>
+    <string name="cancle">取消</string>
+    <string name="connect">连接</string>
+    <string name="connect_statue">连接状态</string>
+    <string name="ip_address">IP地址</string>
+    <string name="forget">忘记</string>
+    <string name="connect_success">连接成功!</string>
+    <string name="input_password">输入密码</string>
+    <string name="have_connect">已经连接</string>
+    <string name="Unprotected_network">未受保护的网络</string>
+    <string name="seeting">设置</string>
+    <string name="update_git_msg">版本有更新,为了不影响您的使用,请及时更新</string>
+    <string name="Total_capacity">总容量</string>
+    <string name="Available_space">可用空间</string>
+    <string name="Picture_using_capacity">图片使用容量</string>
+    <string name="video_using_capacity">视频使用容量</string>
+    <string name="wifi_hot">热点设置</string>
+    <string name="save">保存</string>
+    <string name="Prompt">提示</string>
+    <string name="plese_choice">请选择你要进行的操作</string>
+    <string name="connect_fail">连接失败!</string>
+    <string name="reset_phone">此操作会清除您手机内存设备中的所有数据，您确定重置手机吗？</string>
+    <string name="sure">确定</string>
+    <string name="Recent_update">最近更新:</string>
+    <string name="Refreshing">正在刷新...</string>
+    <string name="Undo_refresh">松开刷新</string>
+    <string name="SSID">网络SSID</string>
+    <string name="show_password">显示密码</string>
+    <string name="pass_night">密码（至少8个字符）</string>
+    <string name="Countdown_shutdown">倒计时关机</string>
+
+    <string name="sdK_all">总空间：</string>
+    <string name="sdK_space">剩余空间：</string>
+
+
+
+
+
+    <string name="update_hint_no">您的软件已是最新版本</string>
+    <string name="update_hint_yes">有新版本可以更新</string>
+    <string name="update_btn_start">立即更新</string>
+    <string name="update_btn_ing">正在下载最新版本...</string>
+    <string name="set_wifi_hot">热点设置</string>
+
+
+    <string name="no_space">SD卡剩余空间不足,请释放部分空间！</string>
+    
+    <string name="mobile_ap">移动热点</string>
+    <string name="traffic_query">流量查询</string>
+
+</resources>

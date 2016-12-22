@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="50dp">
+
+    <!-- 视频列表界面ListView的子布局 -->
+
+    <ImageView
+        android:id="@+id/videoFour_check"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/selector_video_checkbox"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/videoFour_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/videoFour_check"
+        android:src="@mipmap/video_folder" />
+
+    <TextView
+        android:id="@+id/videoFour_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/videoFour_iv"
+        android:layout_toRightOf="@id/videoFour_iv"
+        android:layout_marginLeft="10dp"
+        android:text="VID_553432.mp4"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/videoFour_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/videoFour_iv"
+        android:layout_below="@id/videoFour_name"
+        android:layout_marginLeft="10dp"
+        android:text="2.16MB"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/videoFour_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/videoFour_size"
+        android:layout_below="@id/videoFour_name"
+        android:layout_marginLeft="10dp"
+        android:text="2016-08-05 12:30:30"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/videoFour_delete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/selector_video_four_delete" />
+
+    <ImageView
+        android:id="@+id/videoFour_lock"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@id/videoFour_delete"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/selector_video_four_unlock" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/set_long_line"/>
+
+</RelativeLayout>

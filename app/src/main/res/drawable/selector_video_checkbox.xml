@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--视频的选择按钮的选择器-->
+    <item android:drawable="@mipmap/selector_checkbox_s" android:state_selected="true"/>
+    <item android:drawable="@mipmap/selector_checkbox_s" android:state_pressed="true"/>
+    <item android:drawable="@mipmap/selector_checkbox_s" android:state_checked="true"/>
+    <item android:drawable="@mipmap/selector_checkbox_n" />
+
+</selector>

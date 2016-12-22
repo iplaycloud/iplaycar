@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--行车记录界面照相按钮的选择器2-->
+    <item android:drawable="@mipmap/drive_photo_s" android:state_selected="true" />
+    <item android:drawable="@mipmap/drive_photo_s" android:state_pressed="true" />
+    <item android:drawable="@mipmap/drive_photo_s" android:state_checked="true" />
+    <item android:drawable="@mipmap/drive_photo_n" />
+
+</selector>

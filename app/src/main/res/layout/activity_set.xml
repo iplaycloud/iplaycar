@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/main_back">
+    <!-- 设置界面的布局 -->
+
+    <RelativeLayout
+        android:id="@+id/set_wifi_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/set_wifi_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:src="@mipmap/set_wifi"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wifi"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/set_wifi_iv"
+            android:layout_marginLeft="20dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/set_right_arrows"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/set_wifi_iv"
+            android:src="@mipmap/set_long_line" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_broadcast_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_wifi_rl">
+
+        <ImageView
+            android:id="@+id/set_broadcast_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/set_fm"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FM_broadcast"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/set_broadcast_iv"
+            android:layout_marginLeft="20dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/set_right_arrows"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/set_broadcast_iv"
+            android:src="@mipmap/set_long_line" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_system_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_broadcast_rl">
+
+        <ImageView
+            android:id="@+id/set_system_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/set_system"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/system_settings"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/set_system_iv"
+            android:layout_marginLeft="20dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/set_right_arrows"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/set_system_iv"
+            android:src="@mipmap/set_long_line" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_update_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_system_rl">
+
+        <ImageView
+            android:id="@+id/set_update_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/set_update"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/soft_update"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/set_update_iv"
+            android:layout_marginLeft="20dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/set_right_arrows"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/set_update_iv"
+            android:src="@mipmap/set_long_line" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_control_bottom" />
+
+</RelativeLayout>

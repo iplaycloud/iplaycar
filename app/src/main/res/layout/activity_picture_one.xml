@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/main_back">
+
+    <!-- 图片1 文件夹界面、图片2 小图片界面的布局 -->
+
+    <include
+        layout="@layout/layout_control_bottom"
+        android:id="@+id/picture_layout_bottom" />
+
+    <GridView
+        android:layout_margin="10dp"
+        android:id="@+id/gv_picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:numColumns="3"
+        android:columnWidth="190dp"
+        android:stretchMode="columnWidth"
+        android:layout_above="@id/picture_layout_bottom"
+        android:scrollbars="none"
+        />
+
+    <TextView
+        android:id="@+id/picture_layout_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/upload" />
+
+</RelativeLayout>

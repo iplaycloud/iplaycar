@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--行车记录页面的布局-->
+
+    <SurfaceView
+        android:id="@+id/camera_afterSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <SurfaceView
+        android:id="@+id/camera_beforeSurfaceView"
+        android:layout_alignParentRight="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <ImageView
+        android:id="@+id/drive_switch_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/selector_drive_after" />
+
+    <ImageView
+        android:id="@+id/drive_photo_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/drive_switch_camera"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/selector_drive_photo" />
+
+    <RelativeLayout
+        android:id="@+id/drive_state_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/drive_day_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/drive_pvr_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/drive_day_time"
+            android:layout_marginRight="50dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/red" />
+
+        <ImageView
+            android:id="@+id/drive_pvr_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/drive_pvr_time"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/drive_red_icon" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/drive_video_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/drive_bottom_back">
+
+        <ImageView
+            android:id="@+id/drive_bottom_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/selector_control_return"
+            android:padding="10dp"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/drive_bottom_back"
+            android:layout_marginLeft="20dp"
+            android:text="@string/drive_video"
+            android:textSize="20sp"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/drive_bottom_voice"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/selector_drive_voice"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true" />
+
+        <ImageView
+            android:id="@+id/drive_bottom_time"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/selector_drive_time_five"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/drive_bottom_voice" />
+
+        <ImageView
+            android:id="@+id/drive_bottom_video"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/selector_drive_video"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/drive_bottom_time" />
+
+        <ImageView
+            android:id="@+id/drive_bottom_picture"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/selector_drive_picture"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/drive_bottom_video" />
+
+        <ImageView
+            android:id="@+id/drive_bottom_lock"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/selector_video_four_lock"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/drive_bottom_picture" />
+
+        <ImageView
+            android:id="@+id/drive_bottom_record"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/drive_start"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/drive_bottom_lock" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

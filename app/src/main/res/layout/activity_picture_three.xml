@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/main_back">
+
+    <include
+        layout="@layout/layout_control_right"
+        android:id="@+id/photo_three_right" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/photo_three_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/photo_three_right"
+        />
+
+</RelativeLayout>

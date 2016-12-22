@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6699FF">
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#003399"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_broadcastfragment_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="调频广播"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ToggleButton
+                android:id="@+id/tb_broadcastfragment_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:background="#00000000"
+                android:button="@drawable/toggle_btn"
+                android:checked="false"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_two"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+    <ImageView
+        android:id="@+id/iv_broadcastfragment_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/tv_broadcastfragment_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="108.00hz"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20sp"/>
+        <ImageView
+            android:id="@+id/iv_broadcastfragment_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_three"
+        android:layout_below="@+id/ll_two"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="bottom|center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="87.50Mhz"
+            />
+        <com.iplay.car.common.utils.MnScaleBar
+            android:id="@+id/scale_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="108.00Mhz" />
+    </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="30dp"
+       android:orientation="horizontal"
+       android:layout_below="@+id/ll_three"
+       android:layout_marginLeft="30dp"
+       android:layout_marginRight="30dp"
+       android:gravity="center_vertical">
+       <SeekBar
+          android:id="@+id/sb_broadcastfragment"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/seekbar_define"/>
+   </LinearLayout>
+
+</RelativeLayout>

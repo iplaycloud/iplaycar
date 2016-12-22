@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/main_back">
+
+    <!-- 视频  日期文件夹界面和视频列表界面的布局 -->
+
+    <include
+        layout="@layout/layout_control_bottom"
+        android:id="@+id/video_list_bottom" />
+
+    <ListView
+        android:id="@+id/video_list_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:divider="@null"
+        android:scrollbars="none"
+        android:layout_above="@id/video_list_bottom" />
+
+    <TextView
+        android:id="@+id/video_list_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/upload" />
+
+</RelativeLayout>

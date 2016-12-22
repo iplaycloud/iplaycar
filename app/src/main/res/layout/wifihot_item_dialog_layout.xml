@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_wifihot_item_ssid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SSID"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/et_wifihot_item_ssid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_wifihot_item_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pass_night"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/et_wifihot_item_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:text="12345678"/>
+
+            <CheckBox
+                android:id="@+id/cb_wifihot_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show_password"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>
